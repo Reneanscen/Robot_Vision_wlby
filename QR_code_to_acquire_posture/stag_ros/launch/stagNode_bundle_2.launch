@@ -1,0 +1,15 @@
+<launch>
+    <!--Play ROSbag file-->
+    <!-- <executable cmd="ros2 bag play $(find-pkg-share stag_ros)/bags/bundle_2.bag" output="screen"/> -->
+
+    <!--Start Stag Node-->
+    <node name="stag_node" pkg="stag_ros" exec="stag_node" output="screen">
+        <!-- Place the correct yaml file here-->
+        <param from="$(find-pkg-share stag_ros)/cfg/bundle_2.yaml"/>
+        <!-- Place the correct bundle file here-->
+        <param from="$(find-pkg-share stag_ros)/cfg/bundle_config_2.yaml"/>
+    </node>
+
+    <!-- rviz -->
+    <!-- <node name="rviz2" pkg="rviz2" exec="rviz2" args="-d $(find-pkg-share stag_ros)/cfg/bundle_2.rviz"/> -->
+</launch>
