@@ -1,0 +1,6 @@
+robot_cv_msg/Matrix4x4 robot_rt
+uint32 task_code
+bool clear
+---
+bool state
+robot_cv_msg/GraspInfo[] grasp_rt
