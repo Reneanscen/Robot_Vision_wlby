@@ -1,0 +1,11 @@
+[Unit]
+Description=FamBot Task Manager
+After=network.target
+
+[Service]
+ExecStart=/home/lz/FamBotTaskmanager2023/build/FamBotTaskmanager2023/FamBotTaskmanager
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
