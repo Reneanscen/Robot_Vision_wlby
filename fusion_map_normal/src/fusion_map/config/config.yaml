@@ -1,0 +1,23 @@
+zme_fusion_map_node:
+  ros__parameters:
+    scan_to_baselink_transform:
+      px: 0.195
+      py: 0.0
+      pz: 0.0227
+      roll: 0.0
+      pitch: 0.0
+      yaw: 1.56
+    tof_to_baselink_transform:
+      px: 0.22
+      py: 0.0
+      pz: 0.0727
+      roll: 1.56
+      pitch: 0.007
+      yaw: 1.58
+    realsense_to_baselink_transform:
+      px: 0.12
+      py: 0.0
+      pz: 1.5
+      roll: 0.994837
+      pitch: -3.1416
+      yaw: 1.580796
