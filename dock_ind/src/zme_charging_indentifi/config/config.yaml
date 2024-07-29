@@ -1,0 +1,28 @@
+# config.yaml
+zme_charging_indentifi_node:
+  ros__parameters:
+    publish_frame: base_link
+    max_alignment_error: 0.004
+    vmark_angle: 2.28
+    vmark_length: 0.35
+    debug_mode: true
+    split_thresh: 0.04
+    split_min_point: 25
+    scan_to_baselink_transform: 
+      px: 0.195
+      py: 0.0
+      pz: 0.1227
+      roll: 0.0
+      pitch: 0.0
+      yaw: 1.56
+    vangle: 0.7
+    angle_tolerance: 0.3
+    rdp_epsilon: 0.025
+    vlength: 0.19
+    length_tolerance: 0.09
+    scan_range_min: 0.05
+    scan_range_max: 2.0
+    scan_angle_min: 3.92
+    scan_angle_max: 6.28
+    mask_threshold: 0.02
+    dist_vox: 0.01

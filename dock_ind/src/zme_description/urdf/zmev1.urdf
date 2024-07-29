@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<robot name="zmebot">
+    
+
+  <!-- base link -->
+  <link name="base_link">
+  	<visual>
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <geometry>
+		<cylinder length="0.12" radius="0.10"/>
+      </geometry>
+      <material name="blue">
+      	<color rgba="0.1 0.1 1.0 0.5" /> 
+      </material>
+    </visual>
+  </link>
+    
+  <!-- laser link -->
+  <link name="base_laser">
+  	<visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+		<cylinder length="0.02" radius="0.02"/>
+      </geometry>
+      <material name="black">
+      	<color rgba="0.0 0.0 0.0 0.5" /> 
+      </material>
+    </visual>
+  </link>
+    
+  <!-- laser joint -->
+  <joint name="laser_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="base_laser" />
+      <origin xyz="0.195 0 0.0227"  rpy="0 0 1.56"/>
+  </joint>
+
+  <link name="camera_point_cloud_frame">
+  	<visual>
+      <origin xyz="0 0 0.0" rpy="0 0 0"/>
+      <geometry>
+		    <box size="0.02 0.02 0.02"/>
+      </geometry>
+    </visual>
+  </link>
+
+  <!-- imu joint -->
+  <joint name="tof_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="camera_point_cloud_frame" />
+      <origin xyz="0.195 0 0.0927" rpy="1.546 0.007 1.584"/>
+  </joint>
+
+
+  <link name="camera_depth_optical_frame">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder length="0.04" radius="0.032"/>
+        </geometry>
+          <material name="black">
+            <color rgba="0.0 0.0 0.0 0.5" /> 
+          </material>
+      </visual>
+  </link>
+    
+  <joint name="realsense_joint" type="fixed">
+      <parent link="base_link" />
+      <child link="camera_depth_optical_frame" />
+      <origin xyz="0.035140 0.028017 1.053" rpy="0.994837 -3.1416 1.570796"/>
+      <axis xyz="0 1 0" />
+  </joint>
+
+
+</robot>
+

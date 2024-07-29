@@ -1,0 +1,8 @@
+int8 type
+---
+geometry_msgs/PoseStamped charger_pose
+int8 state
+# state 0:success
+# state 1~255 error state code
+    # 1: 发送请求命令非1
+    # 2：
