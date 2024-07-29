@@ -1,0 +1,1 @@
+/home/zme/Documents/Robot_Vision_wlby/wlby_map_loc/yolov8_ncnn/*.bin filter=lfs diff=lfs merge=lfs -text

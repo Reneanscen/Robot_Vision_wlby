@@ -1,0 +1,9 @@
+/yolov8_node:
+  ros__parameters:
+    topic_params:
+      rgb_image_topic: /camera/color/image_raw
+      segmentation_result_topic: /yolov8/result
+    weight_params:
+      weight_param_path: /home/jazzey/ros2_ws/WLBYMapLoc_ws/src/yolov8_ncnn/weights/best.param
+      weight_bin_path: /home/jazzey/ros2_ws/WLBYMapLoc_ws/src/yolov8_ncnn/weights/best.bin
+    use_sim_time: false

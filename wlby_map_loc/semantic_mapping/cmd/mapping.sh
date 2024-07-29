@@ -1,0 +1,1 @@
+ros2 launch semantic_mapping semantic_mapping.py

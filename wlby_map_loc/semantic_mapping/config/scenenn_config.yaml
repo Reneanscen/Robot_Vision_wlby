@@ -1,0 +1,48 @@
+/semantic_mapping_node:
+  ros__parameters:
+    calib_params:
+      camera_in_odo_pitch: -0.201452
+      camera_in_odo_roll: -122.733
+      camera_in_odo_x: 0.03514
+      camera_in_odo_y: 0.028017
+      camera_in_odo_yaw: -91.9603
+      camera_in_odo_z: 1.26
+    common_params:
+      cluster_distance: 0.4
+      save_path: /home/jazzey/ros2_ws/WLBYMapLoc_ws/data/semantic_map.data
+    depth_discontinuity_map_params:
+      discontinuity_ratio: 0.025
+      kernel_size: 3
+      use_discontinuity: true
+    final_edge_map_params:
+      morphological_closing_size: 1
+      morphological_opening_size: 1
+      use_morphological_closing: true
+      use_morphological_opening: false
+    label_map_params:
+      label_map_method: 0
+      min_size: 500
+    min_convexity_map_params:
+      if_use_gpu: true
+      mask_threshold: -0.0005
+      morphological_opening_size: 1
+      step_size: 1
+      threshold: 0.95
+      use_min_convexity: true
+      use_morphological_opening: true
+      use_threshold: true
+      window_size: 5
+    normal_map_params:
+      distance_factor_threshold: 0.05
+      if_use_gpu: true
+      window_size: 13
+    semantic_instance_segmentation_params:
+      if_show_window: false
+      overlap_threshold: 0.7
+    topic_params:
+      depth_camera_info_topic: /camera/aligned_depth_to_color/camera_info
+      depth_image_topic: /camera/aligned_depth_to_color/image_raw
+      segmentation_result_topic: /yolov8/result
+      tracked_pose_topic: /tracked_pose
+    use_sim_time: false
+

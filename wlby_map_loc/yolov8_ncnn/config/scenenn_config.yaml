@@ -1,0 +1,9 @@
+/yolo_node:
+  ros__parameters:
+    topic_params:
+      rgb_image_topic: /camera/rgb/image_raw
+      segmentation_result_topic: /mask_rcnn/result
+    weight_params:
+      weight_param_path: /home/jazzey/ros2_ws/semantic_mapping_ros2/src/YoloV8NCNN-ROS2/yolov8_ncnn/weights/yolov8s-seg.param
+      weight_bin_path: /home/jazzey/ros2_ws/semantic_mapping_ros2/src/YoloV8NCNN-ROS2/yolov8_ncnn/weights/yolov8s-seg.bin
+    use_sim_time: false
