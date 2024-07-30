@@ -1,0 +1,18 @@
+cameras:
+  camera_names: ["right_wrist_cam", "head_cam"]     # order: right_wrist, head
+  camera_serials: ["230322271584", "207522073319"]
+  image_width: 640
+  image_height: 480
+  camera_fps: 60
+
+record_node:
+  node_name: "data_record_node"
+  master_joint_topic: "/tele_joint_control_cmd"
+  slave_joint_topic: "/slave_arm_status"
+  master_gripper_position_open: 0.004
+  master_gripper_position_close: 0.080   # unit: m
+  slave_gripper_position_open: 0.004
+  slave_gripper_position_close: 0.080
+  save_dir: "dataset"
+  local_mode: True
+  joint_num: 8
