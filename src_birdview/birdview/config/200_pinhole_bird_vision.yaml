@@ -1,0 +1,103 @@
+/BirdVision:
+  ros__parameters:
+    # 前视广角相机
+    frontCamera:
+      open: true
+      cam_type: 0 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_middle_cam'
+      intrinsic_matrix: [ 456.487758, 0.000000, 672.785837,
+                          0.000000, 456.165641, 337.330835,
+                          0.000000, 0.000000, 1.000000 ]
+      distort_matrix: [ -0.143734, 0.021389, -0.000259, 0.002151, 0.000000 ]
+      T_baselink_camera:
+        x: 0.13
+        y: 0.02
+        z: 0.81255
+
+    # 左视广角相机
+    leftCamera:
+      open: true
+      cam_type: 0 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_left_cam'
+      intrinsic_matrix: [ 456.487758, 0.000000, 672.785837,
+                          0.000000, 456.165641, 337.330835,
+                          0.000000, 0.000000, 1.000000 ]
+      distort_matrix: [ -0.143734, 0.021389, -0.000259, 0.002151, 0.000000 ]
+      T_baselink_camera:
+        x: 0.088
+        y: 0.04
+        z: 0.80022
+        yaw: -0.01000000000   # yaw pitch roll 弧度制
+        pitch: -0.0000000000000
+        roll: -2.3561944901923
+
+    # 后视广角相机
+    backCamera:
+      open: true
+      cam_type: 0 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_rear_cam'
+      intrinsic_matrix: [ 456.487758, 0.000000, 672.785837,
+                          0.000000, 456.165641, 337.330835,
+                          0.000000, 0.000000, 1.000000 ]
+      distort_matrix: [ -0.143734, 0.021389, -0.000259, 0.002151, 0.000000 ]
+      T_baselink_camera:
+        x: -0.0
+        y: -0.01
+        z: 0.86027
+        yaw: 1.5507963267949
+        pitch: -0.0000000000000
+        roll: -2.3561944901923
+
+    # 右视广角相机
+    rightCamera:
+      open: true
+      cam_type: 0 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_right_cam'
+      intrinsic_matrix: [ 456.487758, 0.000000, 672.785837,
+                          0.000000, 456.165641, 337.330835,
+                          0.000000, 0.000000, 1.000000 ]
+      distort_matrix: [ -0.143734, 0.021389, -0.000259, 0.002151, 0.000000 ]
+      T_baselink_camera:
+        x: 0.088
+        y: -0.02
+        z: 0.84022
+        yaw: 3.10905926535898
+        pitch: -0.0000000000000
+        roll: -2.3561944901923
+
+    BirdParameters:
+      is_save_images: false       # 是否输出测试图片
+      is_pub_test_images: false   # 是否发布环视每一个的处理图
+
+      blind_length: 0.20 # 0.5m
+
+      height: 800.0 # 鸟瞰图的宽度 pixel
+      width: 800.0  # 鸟瞰图的高度 pixel
+      resolution: 0.005 # 0.005m/1pixel == 0.005m/1pixel
+
+      mask_reference_radio: 8.0 # 有效区域的边长的1/8
+
+      HSV_V: 100.0 # 120.0
+      fusion_plan: 0 # 0: 按照预方案进行融合 1:进行图像特征匹配融合
+      sigmoid: 0.05 # sigmod加权陡度系数
+
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    use_sim_time: false
+
+
+
+
+
+
+
+

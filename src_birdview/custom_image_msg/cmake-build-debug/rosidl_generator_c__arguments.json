@@ -1,0 +1,34 @@
+{
+  "package_name": "custom_image_msg",
+  "output_dir": "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_generator_c/custom_image_msg",
+  "template_dir": "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/String.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/Header.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/Image4m.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../../../lib/python3.8/site-packages/rosidl_generator_c/__init__.py",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/home/xu/ros2_humble/install/rosidl_generator_c/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/String.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/Header.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/Image4m.idl",
+    "/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

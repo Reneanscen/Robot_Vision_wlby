@@ -1,0 +1,4 @@
+source;share/zme_birdvision/local_setup.bash
+source;share/zme_birdvision/local_setup.dsv
+source;share/zme_birdvision/local_setup.sh
+source;share/zme_birdvision/local_setup.zsh

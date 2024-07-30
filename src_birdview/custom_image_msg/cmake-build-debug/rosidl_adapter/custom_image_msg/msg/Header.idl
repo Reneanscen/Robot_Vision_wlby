@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_image_msg/msg/Header.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "custom_image_msg/msg/String.idl"
+
+module custom_image_msg {
+  module msg {
+    @verbatim (language="comment", text=
+      "Two-integer timestamp that is expressed as seconds and nanoseconds.")
+    struct Header {
+      builtin_interfaces::msg::Time stamp;
+
+      @verbatim (language="comment", text=
+        "Transform frame with which this data is associated.")
+      custom_image_msg::msg::String frame_id;
+    };
+  };
+};

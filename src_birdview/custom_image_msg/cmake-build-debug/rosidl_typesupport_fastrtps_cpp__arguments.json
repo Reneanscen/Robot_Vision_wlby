@@ -1,0 +1,29 @@
+{
+  "package_name": "custom_image_msg",
+  "output_dir": "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_typesupport_fastrtps_cpp/custom_image_msg",
+  "template_dir": "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/String.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/Header.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg:msg/Image4m.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/lib/python3.8/site-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/home/xu/ros2_humble/install/rosidl_typesupport_fastrtps_cpp/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/String.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/Header.idl",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg/cmake-build-debug/rosidl_adapter/custom_image_msg/msg/Image4m.idl",
+    "/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Duration.idl",
+    "/home/xu/ros2_humble/install/builtin_interfaces/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

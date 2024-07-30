@@ -1,0 +1,8 @@
+{
+  "package_name": "custom_image_msg",
+  "non_idl_tuples": [
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg:msg/String.msg",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg:msg/Header.msg",
+    "/home/xu/ZME/zme_BirdView/bird_vision/src/custom_image_msg:msg/Image4m.msg"
+  ]
+}

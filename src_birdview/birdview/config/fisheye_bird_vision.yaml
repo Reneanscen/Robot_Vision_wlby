@@ -1,0 +1,75 @@
+/BirdVision:
+  ros__parameters:
+    # 前视鱼眼相机
+    frontCamera:
+      open: true
+      cam_type: 1 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_middle_cam'
+      intrinsic_matrix: [ 2.4032593562676928e+02, 0., 6.7163367800651315e+02,
+                          0., 2.4024948179760210e+02, 3.6275981633180453e+02,
+                          0., 0., 1. ]
+      distort_matrix: [ -5.3404594683498993e-02, -4.2675048103722026e-03, 1.9408775794188430e-02, -1.3588542763447784e-02 ]
+      t_baselink_camera: [ 0.140, 0.0, 1.03 ] # x y z
+      R_baselink_camera: [ 1.5907521172847, 3.1316462292173, 1.2367229689027 ] # yaw pitch roll
+
+    # 左视鱼眼相机
+    leftCamera:
+      open: true
+      cam_type: 1 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_left_cam'
+      intrinsic_matrix: [ 2.3835531075241073e+02, 0., 6.7518394915562510e+02,
+                          0.,2.3830278617550817e+02, 2.8986977785586373e+02,
+                          0., 0., 1. ]
+      distort_matrix: [ -4.7762004397769224e-02, -1.2000852433570368e-02, 1.1490156939933494e-02, -3.8855079626302393e-03 ]
+      t_baselink_camera: [ -0.005, 0.065, 1.08 ] # x y z
+      R_baselink_camera: [ 3.1426879669759, 3.1357236500797, 1.2623461151161 ] # yaw pitch roll
+
+
+    # 后视鱼眼相机
+    backCamera:
+      open: true
+      cam_type: 1 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_rear_cam'
+      intrinsic_matrix: [ 2.3768868852554903e+02, 0., 6.6287635966250537e+02, 0.,
+                          2.3769391973149092e+02, 3.0996774365055711e+02,
+                          0., 0., 1. ]
+      distort_matrix: [ -4.7668115090388749e-02, -1.4368266993229933e-02, 1.4681505523630976e-02, -5.0654311324945696e-03 ]
+      t_baselink_camera: [ -0.11576579169420712, 0.005, 1.1491879180127087 ] # x y z
+      R_baselink_camera: [ 1.6018634942488, -0.0103874533827, -1.9317319410096 ] # yaw pitch roll
+
+    # 右视鱼眼相机
+    rightCamera:
+      open: true
+      cam_type: 1 # 0:针孔 1:鱼眼
+      image_type: 1 # 图片的消息类型 0：ROS 1：Custom
+      topic: '/circle_cameras_right_cam'
+      intrinsic_matrix: [ 2.3829209073180064e+02, 0., 6.6153671497918447e+02, 0.,
+       2.3839003444773394e+02, 3.2103656029303511e+02, 0., 0., 1. ]
+      distort_matrix: [ -5.1784978111115432e-02, -9.4944757470018081e-03, 1.8292150067037168e-02, -1.0901054137364301e-02 ]
+      # 14876579169420712
+      t_baselink_camera: [ -0.014, -0.070, 1.03 ] # x y z
+      R_baselink_camera: [ 3.1654813731755, 0.0094354430840, -1.9003482978202 ] # yaw pitch roll
+
+    BirdParameters:
+      is_save_images: true       # 是否输出测试图片
+      height: 800.0 # 鸟瞰图的宽度 pixel 700
+      width: 800.0  # 鸟瞰图的高度 pixel
+      resolution: 0.005 # 0.005m/1pixel == 0.005m/1pixel
+      blind_length: 0.70 # 0.5m
+      mask_reference_radio: 8.0 # 有效区域的边长的1/8
+      HSV_V: 100.0 # 120.0
+      fusion_plan: 0 # 0: 按照预方案进行融合 1:进行图像特征匹配融合
+      sigmoid: 0.02 # sigmod加权陡度系数
+
+    qos_overrides:
+      /parameter_events:
+        publisher:
+          depth: 1000
+          durability: volatile
+          history: keep_last
+          reliability: reliable
+    use_sim_time: false
+
